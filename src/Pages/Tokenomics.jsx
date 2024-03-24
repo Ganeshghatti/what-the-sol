@@ -3,6 +3,7 @@ import Tooltip from "@mui/material/Tooltip";
 
 export default function Tokenomics() {
   const [msg, setmsg] = useState("copy");
+
   const handleCopyToClipboard = () => {
     const textToCopy = "0x9aCbd03bE2852136680766F7B6Ba0074872396de";
     navigator.clipboard.writeText(textToCopy).then(() => {
@@ -17,20 +18,189 @@ export default function Tokenomics() {
       id="Tokenomics"
       className="w-full h-auto flex flex-col items-center gap-4 relative"
     >
-      <img src="/assets/scrollarrow.png" alt="" className="scroll-arrow" />
-      <div className="svgBackground"></div>
-      <div className="gifBackground"></div>
-      <div className="flex flex-col gap-6 w-4/5 md:w-11/12">
-        <p className="tokenomics-title">TOKENOMICS</p>
-        <p className="tokenomics-description w-3/4 md:w-full">
-          Straight right, lightning uppercut, agile sidestep, devastating liver
-          shot - that's the rhythm of victory with $PUNCH.
-          <br />
-          Each token is a punch thrown in the fight for dominance, each investor
-          a warrior in our corner.
-        </p>
+      <div className="flex flex-col gap-6 custom-width-88 md:w-11/12">
+        <div className="flex justify-between items-center w-full gap-12">
+          <p className="tokenomics-title">TOKENOMICS</p>
+          <div className="flex-1 h-2 bg-black md:h-1" />
+        </div>
+        <div className="w-full flex md:flex-col md:gap-24">
+          <div className="tokenomics-left">
+            <p className="tokenomics-description w-11/12 md:w-full">
+              Each token is a punch thrown in the fight for dominance, each
+              investor a warrior in our corner.
+            </p>
+            <ul>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="34"
+                  viewBox="0 0 32 34"
+                  fill="none"
+                >
+                  <rect
+                    width="32"
+                    height="34"
+                    rx="16"
+                    fill="url(#paint0_linear_165_748)"
+                  />
+                  <path
+                    d="M6.66406 19.832L11.9974 25.4987L25.3307 11.332"
+                    stroke="white"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_165_748"
+                      x1="28.5"
+                      y1="6"
+                      x2="-9.25124e-07"
+                      y2="24.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B00AFE" />
+                      <stop offset="1" stop-color="#00FF85" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Contract renounced
+              </li>{" "}
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="34"
+                  viewBox="0 0 32 34"
+                  fill="none"
+                >
+                  <rect
+                    width="32"
+                    height="34"
+                    rx="16"
+                    fill="url(#paint0_linear_165_748)"
+                  />
+                  <path
+                    d="M6.66406 19.832L11.9974 25.4987L25.3307 11.332"
+                    stroke="white"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_165_748"
+                      x1="28.5"
+                      y1="6"
+                      x2="-9.25124e-07"
+                      y2="24.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B00AFE" />
+                      <stop offset="1" stop-color="#00FF85" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Buy/Sell Tax 0%
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="34"
+                  viewBox="0 0 32 34"
+                  fill="none"
+                >
+                  <rect
+                    width="32"
+                    height="34"
+                    rx="16"
+                    fill="url(#paint0_linear_165_748)"
+                  />
+                  <path
+                    d="M6.66406 19.832L11.9974 25.4987L25.3307 11.332"
+                    stroke="white"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_165_748"
+                      x1="28.5"
+                      y1="6"
+                      x2="-9.25124e-07"
+                      y2="24.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B00AFE" />
+                      <stop offset="1" stop-color="#00FF85" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Liquidity Burnt
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="34"
+                  viewBox="0 0 32 34"
+                  fill="none"
+                >
+                  <rect
+                    width="32"
+                    height="34"
+                    rx="16"
+                    fill="url(#paint0_linear_165_748)"
+                  />
+                  <path
+                    d="M6.66406 19.832L11.9974 25.4987L25.3307 11.332"
+                    stroke="white"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_165_748"
+                      x1="28.5"
+                      y1="6"
+                      x2="-9.25124e-07"
+                      y2="24.5"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#B00AFE" />
+                      <stop offset="1" stop-color="#00FF85" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Total Supply 1,000,000,000 $WTS
+              </li>
+            </ul>
+            <button className="tokenomics-button">Contract Address</button>
+          </div>
+          <div className="tokenomics-right">
+            <div className="flex justify-center gap-12">
+              <div className="flex items-center gap-2 tokenomics-right-piechart-text">
+                <div className="w-4 h-4 bg-[#0094FF]" />
+                Team
+              </div>{" "}
+              <div className="flex items-center gap-2 tokenomics-right-piechart-text">
+                <div className="w-4 h-4 bg-[#B00AFE]" />
+                Marketing
+              </div>{" "}
+              <div className="flex items-center gap-2 tokenomics-right-piechart-text">
+                <div className="w-4 h-4 bg-[#4DFFAA]" />
+                Liquidity
+              </div>
+            </div>
+            <img src="/assets/tokenomicsimg.png" alt=""/>
+          </div>
+        </div>
       </div>
-      <div className="flex w-4/5 md:w-11/12 md:flex-col justify-between md:gap-8 mt-8">
+      {/* <div className="flex w-4/5 md:w-11/12 md:flex-col justify-between md:gap-8 mt-8">
         <div className="tokenomics-piechart-div flex flex-col gap-4 custom-width-55 md:w-11/12">
           <img
             src="./assets/tokenomicsimg.png"
@@ -111,7 +281,7 @@ export default function Tokenomics() {
             />
           </Tooltip>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
