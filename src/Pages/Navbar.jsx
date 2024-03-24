@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className="absolute top-2 left-0 w-screen flex justify-between lg:justify-between md:justify-between items-center py-6 lg:px-8 z-50 md:px-6 pl-36 pr-24"
+      className="absolute top-3 left-0 w-screen flex justify-between lg:justify-between md:justify-between items-center py-6 lg:px-8 z-50 md:px-6 pl-36 pr-24"
     >
       {menu && (
         <>
