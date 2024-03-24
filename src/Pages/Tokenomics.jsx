@@ -5,7 +5,7 @@ export default function Tokenomics() {
   const [msg, setmsg] = useState("copy");
 
   const handleCopyToClipboard = () => {
-    const textToCopy = "0x9aCbd03bE2852136680766F7B6Ba0074872396de";
+    const textToCopy = "947tEoG318GUmyjVYhraNRvWpMX7fpBTDQFBoJvSkSG3";
     navigator.clipboard.writeText(textToCopy).then(() => {
       setmsg("Text copied to clipboard");
       setTimeout(() => {
