@@ -7,7 +7,7 @@ export default function Tokenomics() {
   const handleCopyToClipboard = () => {
     const textToCopy = "947tEoG318GUmyjVYhraNRvWpMX7fpBTDQFBoJvSkSG3";
     navigator.clipboard.writeText(textToCopy).then(() => {
-      setmsg("Text copied to clipboard");
+      setmsg("Address copied to clipboard");
       setTimeout(() => {
         setmsg("copy");
       }, 3000);
@@ -21,7 +21,7 @@ export default function Tokenomics() {
     >
       <img src="/assets/herodesign.png" alt="" className="tokenomics-design" />
 
-      <div className="flex flex-col gap-6 custom-width-88 md:w-11/12">
+      <div className="flex flex-col gap-3 custom-width-88 md:w-11/12">
         <div className="flex justify-between items-center w-full gap-12 md:gap-6">
           <p className="tokenomics-title">TOKENOMICS</p>
           <div className="flex-1 h-2 bg-black md:h-1" />
@@ -29,8 +29,7 @@ export default function Tokenomics() {
         <div className="w-full flex md:flex-col md:gap-12">
           <div className="tokenomics-left">
             <p className="tokenomics-description w-11/12 md:w-full">
-              Each token is a punch thrown in the fight for dominance, each
-              investor a warrior in our corner.
+              What the Fuck is Tokenomics!?
             </p>
             <ul>
               <li>

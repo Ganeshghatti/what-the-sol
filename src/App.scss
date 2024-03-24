@@ -10,7 +10,18 @@
 
 #navbar {
   .navbar-logo {
-    width: 100px;
+    color: #000;
+    font-family: "Original Surfer";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.42px;
+    cursor: pointer;
+    @media (max-width: 867px) {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
   }
   .navbar-pc-menu li {
     color: #000;
@@ -66,8 +77,8 @@
     // margin-top: 8vh;
     display: flex;
     flex-direction: column;
-    // gap: 15px;
-    height: 90%;
+    // gap: 10px;
+    height: 95%;
     align-self: flex-end;
     justify-content: space-between;
     @media (max-width: 867px) {
@@ -78,7 +89,7 @@
     }
     .hero-div-gradient {
       position: relative;
-      max-height: 72%;
+      max-height: 70%;
       @media (max-width: 867px) {
         width: 100%;
       }
@@ -128,15 +139,17 @@
       flex-shrink: 0;
       border-radius: 40px;
       border: 1px solid #434040;
-      color: #000;
+      color: #fff;
+      color: #fff;
       text-align: center;
-      font-family: Century_Schoolbook;
-      font-size: 26px;
+      font-family: "Original Surfer";
+      font-size: 28px;
       font-style: normal;
-      font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 0.52px;
+      font-weight: 400;
+      line-height: 30px; /* 107.143% */
+      letter-spacing: 0.56px;
       margin-left: 5vw;
+      background: #181818;
       @media (max-width: 867px) {
         display: flex;
         width: 211px;
@@ -196,7 +209,7 @@
     }
   }
   .tokenomics-left {
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -239,7 +252,7 @@
       flex-shrink: 0;
       border-radius: 40px;
       border: 1px solid #3c3c3c;
-      color: #000;
+      color: #fff;
       text-align: center;
       font-family: "Original Surfer";
       font-size: 28px;
@@ -249,16 +262,17 @@
       letter-spacing: 1.12px;
       width: fit-content;
       margin-top: 30px;
+      background: #181818;
       @media (max-width: 867px) {
         width: 100%;
         padding: 10px 15px;
-        font-size: 24px;
+        font-size: 26px;
         letter-spacing: 1.04px;
       }
     }
   }
   .tokenomics-right {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -283,6 +297,7 @@
 
 #HowToBuy {
   width: 100%;
+  padding: 0 0 10vh 0;
   .HowToBuy-title {
     color: #121618;
     font-family: "Original Surfer";
@@ -310,7 +325,7 @@
   }
   .HowToBuy-card {
     border-radius: 30px;
-    width: 28%;
+    width: 27%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -321,8 +336,16 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    padding: 180px 80px 80px 80px;
+    position: relative;
+    padding: 150px 60px 60px 60px;
     line-height: normal;
+    img {
+      // width: 50%;
+      position: absolute;
+      top: -30%;
+      width: 163px;
+      height: 179px;
+    }
     @media (max-width: 867px) {
       width: 95%;
       padding: 120px 40px 70px 40px;
@@ -338,109 +361,106 @@
     background: linear-gradient(245deg, #00ff85 0%, #b00afe 92%);
   }
 }
-#Roadmap {
-  background: #151515;
-  .roadmap-title {
-    color: #fff;
-    font-family: Ranchers;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    @media (max-width: 867px) {
-      font-size: 45px;
-    }
-  }
-  .roadmap-description {
-    color: #d9d9d9;
-    font-family: "Noto Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    @media (max-width: 867px) {
-      font-size: 16px;
-    }
-  }
-  .roadmap-card-title {
-    color: #f7d432;
-    font-family: Ranchers;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    @media (max-width: 867px) {
-      font-size: 50px;
-    }
-  }
-  .roadmap-card-description {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    @media (max-width: 867px) {
-      font-size: 20px;
-    }
-  }
-}
-#footer {
-  background: #151515;
-  .footer-div1-div1 {
-    border: 5px dashed #fff;
-    background: #f7d432;
-    position: absolute;
-    transform: rotate(-5.738deg);
-    bottom: -10%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    @media (max-width: 867px) {
-      padding: 6px;
-    }
-  }
-  .footer-div1-div1-text {
-    transform: rotate(-5.74deg);
-    color: #000;
-    font-family: Poppins;
-    font-size: 33px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    animation: moveRightToLeft 15s linear infinite;
-    @media (max-width: 867px) {
-      font-size: 24px;
-    }
-  }
 
-  @keyframes moveRightToLeft {
-    from {
-      transform: translateX(-50vw);
+#footer {
+  .footer-div {
+    .footer-div1 {
+      border-radius: 30px;
+      background: linear-gradient(65deg, #00ff85 0%, #b00afe 92%);
+      @media (max-width: 867px) {
+        background: linear-gradient(245deg, #00ff85 0%, #b00afe 92%);
+      }
+      .footer-div1-div {
+        position: relative;
+        @media (max-width: 867px) {
+          flex-direction: column-reverse;
+        }
+        .footer-div1-div-img {
+          width: 80%;
+          align-self: flex-start;
+          @media (max-width: 867px) {
+            margin-top: -45px;
+            z-index: 50;
+          }
+          @media (min-width: 867px) {
+            position: absolute;
+            left: 0;
+            z-index: 2;
+            bottom: 0;
+            width: 37%;
+          }
+        }
+        .footer-div1-gradient {
+          display: flex;
+          margin: 20px 8% 20px 0;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 60%;
+          @media (max-width: 867px) {
+            width: 100%;
+            margin: 0 0 0 0;
+          }
+          .footer-div1-gradient-text {
+            color: #000;
+            text-align: center;
+            font-family: "Original Surfer";
+            font-size: clamp(65px, 4.5vw, 80px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: clamp(50px, 5vw, 90px);
+            @media (max-width: 867px) {
+              font-size: clamp(45px, 7vw, 65px);
+              line-height: 50px;
+              width: 90%;
+            }
+          }
+
+          .footer-div1-gradient-button {
+            color: #fff;
+            text-align: center;
+            font-family: "Original Surfer";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 107.143% */
+            letter-spacing: 0.56px;
+            border-radius: 40px;
+            border: 1px solid #434040;
+            background: #000;
+            width: 232px;
+            height: 70px;
+            @media (max-width: 867px) {
+              width: 165.566px;
+              height: 56px;
+              font-size: 26px;
+            }
+          }
+        }
+      }
     }
-    to {
-      transform: translateX(-250vw);
-    }
-  }
-  .footer-div2-div2 ul li {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .footer-title {
-    color: #f7d432;
-    font-family: Ranchers;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    @media (max-width: 867px) {
-      font-size: 45px;
+    .footer-div2 {
+      width: 100%;
+      @media (max-width: 867px) {
+        width: 91%;
+        align-self: center;
+      }
+      .footer-div2-copyright {
+        color: #848484;
+        font-family: "Original Surfer";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      ul li {
+        color: #181818;
+        font-family: "Original Surfer";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
   }
 }

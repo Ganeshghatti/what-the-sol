@@ -58,11 +58,6 @@ export default function Navbar() {
                 How to buy
               </a>
             </li>
-            <li>
-              <a href="/#Roadmap" onClick={menuf}>
-                Roadmap
-              </a>
-            </li>
             <div className="flex gap-12 items-center flex-col">
               <div className="flex gap-6">
                 <a href="https://twitter.com/BlstPunch">
@@ -105,10 +100,10 @@ export default function Navbar() {
           </ul>
         </>
       )}
-      <img src="./assets/logo.png" className="navbar-logo cursor-pointer" />
-
+      {/* <img src="./assets/logo.png" className="navbar-logo cursor-pointer" /> */}
+      <p className="navbar-logo">$WTS</p>
       <div className="flex gap-8 items-center md:hidden">
-      <ul
+        <ul
           className="flex z-50 justify-around items-center md:hidden navbar-pc-menu mx-12"
           style={{ gap: "5vw" }}
         >
@@ -117,9 +112,6 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/#HowToBuy">How to buy</a>
-          </li>
-          <li>
-            <a href="/#Roadmap">Roadmap</a>
           </li>
         </ul>
         <a href="https://twitter.com/BlstPunch">
