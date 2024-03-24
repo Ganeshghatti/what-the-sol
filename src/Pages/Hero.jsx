@@ -8,7 +8,7 @@ export default function Hero() {
     gsap.fromTo(
       ".hero-div-gradient",
       { opacity: 0 },
-      { opacity: 1, duration: 1}
+      { opacity: 1, duration: 1 }
     );
   }, []);
 
@@ -23,7 +23,6 @@ export default function Hero() {
       id="hero"
       className="w-full relative flex items-center md:flex-col"
     >
-      <div className="hero-design" />
       <div className="hero-div">
         <div className="hero-div-gradient">
           <img

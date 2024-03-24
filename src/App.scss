@@ -38,49 +38,37 @@
 
 #hero {
   width: 100vw;
+  height: 100vh;
   padding-top: 7vh;
-  padding-bottom: 5vh;
   overflow-x: hidden !important;
   @media (min-width: 867px) {
     background-image: url("../public/assets/heroimg.png");
     background-repeat: no-repeat;
-    background-position: right 0 bottom 25vh;
+    // background-position: right 0 bottom 25vh;
+    background-position: right 0 bottom 0vh;
     background-size: 45%;
     animation: mymove 1s 1;
   }
   @keyframes mymove {
     0% {
-      background-position: right -10vh bottom 25vh;
+      background-position: right -10vh bottom 0vh;
     }
     100% {
-      background-position: right 0 bottom 25vh;
+      background-position: right 0 bottom 0vh;
     }
   }
   @media (max-width: 867px) {
     height: auto;
     padding-top: 10vh;
   }
-  .hero-design {
-    position: absolute;
-    bottom: 0;
-    right: -10vw;
-    width: 395px;
-    height: 376px;
-    flex-shrink: 0;
-    border-radius: 395px;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 255, 133, 0.1) 23.32%,
-      rgba(0, 89, 153, 0.1) 99.91%
-    );
-    filter: blur(40px);
-  }
   .hero-div {
     margin-left: 5vw;
-    margin-top: 8vh;
+    // margin-top: 8vh;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 15px;
+    height: 100%;
+    justify-content: space-between;
     @media (max-width: 867px) {
       margin-left: 0;
       margin-top: 0;
@@ -88,11 +76,13 @@
     }
     .hero-div-gradient {
       position: relative;
+      height: 75%;
       @media (max-width: 867px) {
         width: 100%;
       }
       .hero-div-gradient-img {
         width: 53vw;
+        height: 100%;
         @media (max-width: 867px) {
           width: 100%;
         }
@@ -181,8 +171,14 @@
 #Tokenomics {
   width: 100%;
   padding: 14vh 0 10vh 0;
+  margin-top: 7vh;
   @media (max-width: 867px) {
     padding: 14vh 0;
+  }
+  .tokenomics-design {
+    position: absolute;
+    top: -20vh;
+    right: 0vw;
   }
   .tokenomics-title {
     color: #121618;
@@ -251,7 +247,10 @@
       width: fit-content;
       margin-top: 30px;
       @media (max-width: 867px) {
-        width: 90%;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 24px;
+        letter-spacing: 1.04px;
       }
     }
   }
@@ -270,105 +269,69 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-    }
-  }
-
-  .tokenomics-piechart-div {
-    z-index: 5;
-  }
-  .tokenomics-right {
-    z-index: 5;
-  }
-  .tokenomics-piechart-text {
-    color: #151515;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .tokenomics-right-div-text {
-    color: #151515;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 34px; /* 141.667% */
-    letter-spacing: 0.96px;
-    @media (max-width: 867px) {
-      font-size: 20px;
+      display: flex;
+      align-items: center;
+      @media (max-width: 867px) {
+        font-size: 18px;
+      }
     }
   }
 }
 
 #HowToBuy {
-  background: linear-gradient(90deg, #151515 39.52%, rgba(0, 0, 0, 0) 98.2%);
-  position: relative;
   width: 100%;
-  background-size: cover;
-  padding: 16vh 0;
-  height: 100%;
-  @media (max-width: 867px) {
-    padding: 8vh 0;
-  }
-  .gifBackground {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    background-image: url("../public/assets/Howtobuy.gif");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
   .HowToBuy-title {
-    color: #fff;
-    font-family: Ranchers;
-    font-size: 100px;
+    color: #121618;
+    font-family: "Original Surfer";
+    font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    z-index: 5;
-    white-space: nowrap;
+    line-height: 174px; /* 217.5% */
     @media (max-width: 867px) {
-      font-size: 45px;
+      font-size: 35px;
+      line-height: normal;
     }
   }
   .HowToBuy-description {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 16px;
+    color: #3c3c3c;
+    font-family: "Original Surfer";
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    z-index: 5;
-  }
-  .HowToBuy-art-div,
-  .HowToBuyText-div {
-    z-index: 5;
-  }
-  .HowToBuy-art-div-phone {
-    z-index: 5;
-  }
-  .howtobuytext-phone {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .howtobuytext {
-    color: #fff;
-    font-family: "Noto Sans";
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 25%;
+    letter-spacing: 0.48px;
     @media (max-width: 867px) {
-      font-size: 18px;
+      font-size: 16px;
+      letter-spacing: 0.32px;
     }
+  }
+  .HowToBuy-card {
+    border-radius: 30px;
+    width: 28%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: "Original Surfer";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 180px 80px 80px 80px;
+    line-height: normal;
+    @media (max-width: 867px) {
+      width: 95%;
+    }
+  }
+  .HowToBuy-card1 {
+    background: linear-gradient(245deg, #00ff85 0%, #b00afe 92%);
+  }
+  .HowToBuy-card2 {
+    background: linear-gradient(328deg, #00ff85 9.06%, #b00afe 72.32%);
+  }
+  .HowToBuy-card3 {
+    background: linear-gradient(245deg, #00ff85 0%, #b00afe 92%);
   }
 }
 #Roadmap {
