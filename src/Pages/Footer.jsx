@@ -33,14 +33,14 @@ export default function Footer() {
                 alt=""
                 className="object-cover w-full hidden md:block"
               />
-              <div className="flex items-center absolute sm:gap-0 lg:gap-2 flex-col">
+              <div className="flex items-center justify-center absolute sm:gap-0 lg:gap-2 flex-col">
                 <p className="footer-div1-gradient-text">WHAT THE SOL!!</p>
                 <button className="footer-div1-gradient-button">Buy Now</button>
               </div>
             </div>
           </div>
         </div>
-        <div className="footer-div2 flex justify-between md:flex-col-reverse md:gap-8 md:items-center md:justify-center md:mt-12">
+        <div className="footer-div2 flex justify-between md:flex-col-reverse md:gap-8 md:items-center md:justify-center md:mt-6">
           <p className="footer-div2-copyright md:w-full md:text-center">
             Copyright ©2024 WTS. All rights reserved.
           </p>

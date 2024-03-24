@@ -8,11 +8,7 @@ export default function HowToBuy() {
           <p className="HowToBuy-title">HOW TO BUY</p>
           <div className="flex-1 h-2 bg-black md:h-1" />
         </div>
-        {/* <p className="HowToBuy-description w-1/2 md:w-11/12">
-          Each token is a punch thrown in the fight for dominance, each investor
-          a warrior in our corner.
-        </p>{" "} */}
-        <div className="w-full flex md:flex-col md:items-center justify-between mt-32 md:gap-28">
+        <div className="w-full flex md:flex-col md:items-center justify-between mt-24 md:gap-28">
           <div className="HowToBuy-card1 HowToBuy-card">
             <img src="/assets/HowtoBuycard1.png" alt="" />
             <a href="https://app.thruster.finance/">

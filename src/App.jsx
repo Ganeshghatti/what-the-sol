@@ -7,7 +7,6 @@ import "./App.scss";
 import Hero from "./Pages/Hero";
 import Tokenomics from "./Pages/Tokenomics";
 import HowToBuy from "./Pages/HowToBuy";
-import Roadmap from "./Pages/Roadmap";
 
 export default function App() {
   return (
@@ -16,7 +15,6 @@ export default function App() {
       <Hero />
       <Tokenomics />
       <HowToBuy />
-      {/* <Roadmap/> */}
       <Footer />
     </BrowserRouter>
   );
