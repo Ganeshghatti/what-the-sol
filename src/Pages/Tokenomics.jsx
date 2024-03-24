@@ -26,7 +26,7 @@ export default function Tokenomics() {
           <p className="tokenomics-title">TOKENOMICS</p>
           <div className="flex-1 h-2 bg-black md:h-1" />
         </div>
-        <div className="w-full flex md:flex-col md:gap-24">
+        <div className="w-full flex md:flex-col md:gap-12">
           <div className="tokenomics-left">
             <p className="tokenomics-description w-11/12 md:w-full">
               Each token is a punch thrown in the fight for dominance, each
