@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex flex-col justify-center items-center w-full py-12"
+      className="flex flex-col justify-center items-center w-full py-12 md:mt-0 mt-16"
     >
       <div className="flex flex-col gap-3 custom-width-88 md:w-full footer-div">
         <div className="flex w-full footer-div1">
@@ -55,7 +55,7 @@ export default function Footer() {
                 <a href="/#HowToBuy">How to buy</a>
               </li>
             </ul>
-            <a href="https://twitter.com/BlstPunch">
+            <a href="https://twitter.com/what_the_SB">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -76,7 +76,7 @@ export default function Footer() {
                 </defs>
               </svg>{" "}
             </a>
-            <a href="https://t.me/BlastPnch">
+            <a href="https://t.me/whathesolbase">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
