@@ -41,7 +41,22 @@ export default function Hero() {
           <p> Oh no, What the SOL!</p>
           <p>What the fuck is happening on SOLANA?</p>
         </div>
-        <button className="hero-button">Buy Now</button>
+        <a
+          href="https://raydium.io/swap"
+          target="_blank"
+          className="w-fit"
+          onClick={scalehandleClick}
+        >
+          <button
+            className="hero-button"
+            style={{
+              transform: `scale(${scale.scale})`,
+              transition: "transform 0.3s ease",
+            }}
+          >
+            Buy Now
+          </button>
+        </a>
       </div>
     </section>
   );

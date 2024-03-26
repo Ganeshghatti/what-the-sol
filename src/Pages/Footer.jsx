@@ -9,6 +9,13 @@ import MailIcon from "@mui/icons-material/Mail";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 
 export default function Footer() {
+  const [scale, setscale] = useState({ scale: 1 });
+
+  const scalehandleClick = () => {
+    setscale((prevState) => ({
+      scale: 0.9,
+    }));
+  };
   return (
     <footer
       id="footer"
@@ -35,7 +42,22 @@ export default function Footer() {
               />
               <div className="flex items-center justify-center absolute sm:gap-0 lg:gap-2 flex-col">
                 <p className="footer-div1-gradient-text">WHAT THE SOL!!</p>
-                <button className="footer-div1-gradient-button">Buy Now</button>
+                <a
+                  href="https://raydium.io/swap"
+                  target="_blank"
+                  className="w-fit"
+                  onClick={scalehandleClick}
+                >
+                  <button
+                    className="footer-div1-gradient-button"
+                    style={{
+                      transform: `scale(${scale.scale})`,
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
+                    Buy Now
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -45,9 +67,7 @@ export default function Footer() {
             Copyright ©2024 WTS. All rights reserved.
           </p>
           <div className="flex gap-8 md:gap-0 md:justify-between items-center md:w-full">
-            <ul
-              className="flex items-center gap-8 md:gap-2 md:justify-between"
-             >
+            <ul className="flex items-center gap-8 md:gap-2 md:justify-between">
               <li>
                 <a href="/#Tokenomics">Tokenomics</a>
               </li>
