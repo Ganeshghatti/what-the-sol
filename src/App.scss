@@ -195,6 +195,10 @@
     position: absolute;
     top: -20vh;
     right: 0vw;
+    @media (max-width: 867px) {
+      top: 0;
+      width: 35vw;
+    }
   }
   .tokenomics-title {
     color: #121618;
