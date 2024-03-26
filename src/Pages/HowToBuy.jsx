@@ -11,18 +11,18 @@ export default function HowToBuy() {
         <div className="w-full flex md:flex-col md:items-center justify-between mt-24 md:gap-28">
           <div className="HowToBuy-card1 HowToBuy-card">
             <img src="/assets/HowtoBuycard1.png" alt="" />
-            <a href="https://app.thruster.finance/">
-              Open https://
+            <a href="https://raydium.io/swap/">
+              Open 
               <br />
-              app.thruster.fina
+              https://raydium.io
               <br />
-              nce/
+              /swap/
             </a>
           </div>
           <div className="HowToBuy-card2 HowToBuy-card">
             {" "}
             <img src="/assets/HowtoBuycard2.png" alt="" />
-            Connect your EVM wallet
+            Connect your Solana wallet
           </div>
           <div className="HowToBuy-card3 HowToBuy-card">
             {" "}

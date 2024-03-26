@@ -7,8 +7,8 @@ export default function Hero() {
   useEffect(() => {
     gsap.fromTo(
       ".hero-div-gradient",
-      { opacity: 0 },
-      { opacity: 1, duration: 1 }
+      { scale: 0 },
+      { scale: 1, duration: 0.25 }
     );
   }, []);
 
