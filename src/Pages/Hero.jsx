@@ -10,6 +10,11 @@ export default function Hero() {
       { scale: 0 },
       { scale: 1, duration: 0.25, delay: 1 }
     );
+    gsap.fromTo(
+      ".hero-div-content",
+      { scale: 0 },
+      { scale: 1, duration: 0.25, delay: 2 }
+    );
   }, []);
 
   const scalehandleClick = () => {
@@ -38,27 +43,29 @@ export default function Hero() {
           </p>
         </div>
         <img src="/assets/heroimg.png" alt="" className="hero-img-phone" />
-        <div className="flex flex-col gap-2 hero-div-text">
-          <p>What the Fxck!?</p>
-          <p> Oh no, What the SOL!</p>
-          <p>What the fuck is happening on SOLANA?</p>
-        </div>
-        <a
-          href="https://raydium.io/swap"
-          target="_blank"
-          className="w-fit"
-          onClick={scalehandleClick}
-        >
-          <button
-            className="hero-button"
-            style={{
-              transform: `scale(${scale.scale})`,
-              transition: "transform 0.3s ease",
-            }}
+        <div className="hero-div-content flex flex-col gap-4">
+          <div className="flex flex-col gap-2 hero-div-text">
+            <p>What the Fxck!?</p>
+            <p> Oh no, What the SOL!</p>
+            <p>What the fuck is happening on SOLANA?</p>
+          </div>
+          <a
+            href="https://raydium.io/swap"
+            target="_blank"
+            className="w-fit hero-button-animation"
+            onClick={scalehandleClick}
           >
-            Buy Now
-          </button>
-        </a>
+            <button
+              className="hero-button"
+              style={{
+                transform: `scale(${scale.scale})`,
+                transition: "transform 0.3s ease",
+              }}
+            >
+              Buy Now
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );
