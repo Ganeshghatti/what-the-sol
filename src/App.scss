@@ -52,22 +52,24 @@
   height: 100vh;
   padding-top: 7vh;
   overflow-x: hidden !important;
-  @media (min-width: 867px) {
-    background-image: url("../public/assets/heroimg.png");
-    background-repeat: no-repeat;
-    // background-position: right 0 bottom 25vh;
-    background-position: right 0 bottom 0vh;
-    background-size: 45% 85%;
-    // animation: mymove 1s 1;
+  .hero-bg-div {
+    @media (min-width: 867px) {
+      background-image: url("../public/assets/heroimg.png");
+      background-repeat: no-repeat;
+      background-position: right 0 bottom 0vh;
+      background-size: 45% 85%;
+      animation: mymove 1s 1 forwards;
+    }
+
+    @keyframes mymove {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
   }
-  // @keyframes mymove {
-  //   0% {
-  //     background-position: right -10vh bottom 0vh;
-  //   }
-  //   100% {
-  //     background-position: right 0 bottom 0vh;
-  //   }
-  // }
   @media (max-width: 867px) {
     height: auto;
     padding-top: 10vh;
