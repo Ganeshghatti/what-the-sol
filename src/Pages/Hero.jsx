@@ -50,7 +50,7 @@ export default function Hero() {
             <p>What the fuck is happening on SOLANA?</p>
           </div>
           <a
-            href="https://raydium.io/swap"
+            href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CoHFAJZt5r9py4o1xeCYRZnSnWrp13jT7gSbpFjVJCcd&fixed=in"
             target="_blank"
             className="w-fit hero-button-animation"
             onClick={scalehandleClick}

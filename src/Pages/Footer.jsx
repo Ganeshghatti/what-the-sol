@@ -43,7 +43,7 @@ export default function Footer() {
               <div className="flex items-center justify-center absolute sm:gap-0 lg:gap-2 flex-col">
                 <p className="footer-div1-gradient-text">WHAT THE SOL!!</p>
                 <a
-                  href="https://raydium.io/swap"
+                  href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CoHFAJZt5r9py4o1xeCYRZnSnWrp13jT7gSbpFjVJCcd&fixed=in"
                   target="_blank"
                   className="w-fit"
                   onClick={scalehandleClick}
@@ -75,7 +75,7 @@ export default function Footer() {
                 <a href="/#HowToBuy">How to buy</a>
               </li>
             </ul>
-            <a href="https://twitter.com/what_the_SB">
+            <a href="https://twitter.com/whatthesolbase">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -96,7 +96,7 @@ export default function Footer() {
                 </defs>
               </svg>{" "}
             </a>
-            <a href="https://t.me/whathesolbase">
+            <a href="https://t.co/bvkdSkVOK7">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

@@ -5,7 +5,7 @@ export default function Tokenomics() {
   const [msg, setmsg] = useState("copy");
 
   const handleCopyToClipboard = () => {
-    const textToCopy = "947tEoG318GUmyjVYhraNRvWpMX7fpBTDQFBoJvSkSG3";
+    const textToCopy = "CoHFAJZt5r9py4o1xeCYRZnSnWrp13jT7gSbpFjVJCcd";
     navigator.clipboard.writeText(textToCopy).then(() => {
       setmsg("Address copied to clipboard");
       setTimeout(() => {
@@ -187,7 +187,7 @@ export default function Tokenomics() {
                 onClick={handleCopyToClipboard}
               >
                 Contract Address
-                <span className="tokenomics-button-address hidden md:block">947tEoG318GUmyjVYhraNRvWpMX7fpBTDQFBoJvSkSG3</span>
+                <span className="tokenomics-button-address hidden md:block">CoHFAJZt5r9py4o1xeCYRZnSnWrp13jT7gSbpFjVJCcd</span>
               </button>
             </Tooltip>
           </div>
